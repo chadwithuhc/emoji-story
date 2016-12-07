@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Emoji Story</title>
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+  <style>
+    /* Our styles go here */
+    body {
+      background-color: tomato;
+    }
+
+    #story {
+      width: 80%;
+      text-align: center;
+      margin: 0 auto;
+      font: 300 3em Helvetica;
+      color: #fff;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+  <script src="https://chadwithuhc.github.io/emoji-story/scripts/emoji-story.js"></script>
+  <script>
+    $(document).ready(function() {
+      var screen = new Screen(
+        Icon('em-girl'),
+        Text('Hi! My name is Tina!')
+      );
+
+      screen.show('bounceIn');
+      screen.hide('bounceOut', 3);
+
+      screen.update(
+        Icon('em-basketball'),
+        Text('I enjoy basketball')
+      );
+
+      screen.show('bounceInLeft');
+      screen.hide('bounceOutRight', 3);
+
+      screen.update(
+        Icon('em-alien'),
+        Text('I am also an alien!')
+      );
+
+      screen.show('rotateIn');
+      screen.hide('rotateOut', 3);
+
+      // When we're done writing our timeline, START!
+      screen.start();
+    });
+  </script>
+</head>
+<body>
+  <div id="story"></div>
+</body>
+</html>
