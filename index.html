@@ -10,44 +10,80 @@
   <style>
     /* Our styles go here */
     body {
-      background-color: tomato;
+      background-color: DarkSlateGrey;
+      text-align: center;
     }
 
-    #story {
-      width: 80%;
-      text-align: center;
-      margin: 0 auto;
-      font: 300 3em Helvetica;
-      color: #fff;
+    h1 {
+      font-family: Georgia;
+      font-size: 4em;
+      color: Goldenrod;
+      border-bottom: dashed 1px Goldenrod;
+      margin-bottom: 0;
+      padding-bottom: 0.5em;
     }
+    p {
+      font-family: monospace;
+      font-size: 2em;
+      color: Peru;
+    }
+
+    #storyboard {
+      display: flex;
+      border: double 3px LightGrey;
+      height: 30em;
+    }
+    #story {
+      margin: auto;
+    }
+
+    .text {
+      font-family: Georgia;
+      font-size: 3em;
+      color: white;
+    }
+    .emoji {
+      font-size: 5em;
+    }
+
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
   <script src="https://chadwithuhc.github.io/emoji-story/scripts/emoji-story.js"></script>
   <script>
     $(document).ready(function() {
       var screen = new Screen(
-        Icon('em-girl'),
-        Text('Hi! My name is Tina!')
+        Icon('em-bear'),
+        Text('Hi! My name is Chad!')
       );
 
       screen.show('bounceIn');
       screen.hide('bounceOut', 3);
 
       screen.update(
-        Icon('em-basketball'),
-        Text('I enjoy basketball')
+        Icon('em-cat2') + Icon('em-dog'),
+        Text('I enjoy cats'),
+        Text('and dogs')
       );
 
       screen.show('bounceInLeft');
       screen.hide('bounceOutRight', 3);
 
       screen.update(
-        Icon('em-alien'),
-        Text('I am also an alien!')
+        Icon('em-chocolate_bar') + Icon('em-candy') + Icon('em-donut') + Icon('em-ice_cream'),
+        Text('I\'m a fan of sweets')
       );
 
       screen.show('rotateIn');
-      screen.hide('rotateOut', 3);
+      screen.hide('rotateOut', 5);
+
+      screen.update(
+        Icon('em-christmas_tree') + Icon('em-christmas_tree') + Icon('em-christmas_tree'),
+        Text('and the smell of Christmas Trees'),
+        Icon('em-christmas_tree') + Icon('em-christmas_tree') + Icon('em-christmas_tree')
+      );
+
+      screen.show('shake');
+      screen.hide('zoomOut', 5);
 
       // When we're done writing our timeline, START!
       screen.start();
@@ -55,6 +91,12 @@
   </script>
 </head>
 <body>
-  <div id="story"></div>
+  <h1>Chad Drummond</h1>
+  <p>Web Development Instructor @ Galvanize</p>
+  <main id="storyboard">
+    <div id="story">
+      <!-- Our animation will show up here -->
+    </div>
+  </main>
 </body>
 </html>

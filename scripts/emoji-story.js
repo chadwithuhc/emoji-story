@@ -69,9 +69,9 @@ Screen.prototype.next = function() {
 }
 
 function Icon(iconName) {
-  return '<i class="em ' + iconName + '"></i>';
+  return '<i class="emoji em ' + iconName + '"></i>';
 }
 
 function Text(value) {
-  return '<p>' + value + '</p>';
+  return '<p class="text">' + value + '</p>';
 }
