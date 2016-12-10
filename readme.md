@@ -15,18 +15,19 @@ Requirements:
 
 - What is HTML?
 - What are some common HTML elements?
-  - Examples: `header`, `h1`, `p`
+  - Think of a [Word Document]((https://docs.google.com/document/d/1pFWVHCHcwDCroAXCRmgx_SjTiUfjDe0B5pEnySBRIbU/edit?usp=sharing)) on Google Docs
+  - Examples: `<header>`, `<h1>`, `<p>`
 
 Tasks:
 - Open Chrome Web Browser and go to `jsbin.com`
-- Create a `header` tag in your `body`
-- Add an `h1` tag with your name
-- Add a `p` tag with your name and grade
-- Add another `p` tag highlighting two of your likes
-  - Want to write more? Feel free to add more `p` tags
+- Add an `<h1>` tag with your name
+- Add a `<p>` tag with your name and grade
+- Add another `<p>` tag highlighting two of your likes
+  - Want to write more? Feel free to add more `<p>` tags
+  - Want to split text between lines? Try a `<br/>`
 - Add a link to the `emoji.css` file after the `</title>` tag
   - `<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">`
-- Add matching emoji(s) before each `p` tag
+- Add matching emoji(s) before each `<p>` tag
   - `<i class="em em-some-emoji"></i>` then replace `em-some-emoji` with emoji name: Example `em-basketball`
 
 Resources:
@@ -35,12 +36,12 @@ Resources:
 
 ## Part 2: Styling with CSS
 
-- What is CSS?
+- What is CSS and what is it used for?
 - What are some common CSS properties?
   - Examples: `background-color`, `font-size`, `font-family`, `color`
 
 Tasks:
-- Add a `<style></style>` tag before the `</head>` tag
+- Add a `<style>` tag before the `</head>` tag
 - Set a `background-color` for the `body` element
 ```
 body {
@@ -95,7 +96,9 @@ Tasks:
 ```
 <script>
     $(document).ready(function() {
-      var screen = new Screen(
+      var screen = new Screen();
+
+      screen.setContent(
         Icon('em-bear'),
         Text('Hi! My name is Chad!')
       );
@@ -143,15 +146,15 @@ Good answers or solutions will be found on Mozilla Developer Network (MDN), Stac
 Can't find answers on Google? Here's some common problems.
 
 Fonts not loading?
-> Is your `link` tag in your `<head>`?
+> Is your `link` tag in your `<head>`?  
 > Have you added your `font-family` declaration in your CSS?
 
 CSS styles not working?
-> Are you targeting the right element? `p`, `h1`, etc.
+> Are you targeting the right element? `p`, `h1`, etc.  
 > Is your syntax correct? `property: value;` Semicolons required!
 
 JavaScript not running?
-> Are there errors in the console? Right click the page, choose "Inspect", then switch to the "Console" tab. Do you see errors?
+> Are there errors in the console? Right click the page, choose "Inspect", then switch to the "Console" tab. Do you see errors?  
 > Did you include the `<script>` tags with `src` on them? These are required.
 
-If all else fails and you are completely lost, feel free to [reach out to me](mailto:chad.drummond@galvanize.com)
+If all else fails and you are completely lost, feel free to [reach out to me](mailto:chad.drummond@galvanize.com).
