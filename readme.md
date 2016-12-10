@@ -2,6 +2,13 @@
 
 We're going to create an animated story about you using HTML, CSS, JavaScript and Emojis!
 
+Contents:
+- [Part 1: Setting up the HTML](#part-1-setting-up-the-html)
+- [Part 2: Styling with CSS](#part-2-styling-with-css)
+- [Part 3: Adding an animated story with JavaScript] (#part-3-adding-an-animated-story-with-javascript)
+- [Additional Resources](#additional-resources)
+- [Troubleshooting](#troubleshooting)
+
 Objectives:
 - Build a simple about me page with HTML
 - Style a pages’ colors and fonts with CSS
@@ -15,7 +22,7 @@ Requirements:
 
 - What is HTML?
 - What are some common HTML elements?
-  - Think of a [Word Document]((https://docs.google.com/document/d/1pFWVHCHcwDCroAXCRmgx_SjTiUfjDe0B5pEnySBRIbU/edit?usp=sharing)) on Google Docs
+  - Think of a [Word Document](https://docs.google.com/document/d/1pFWVHCHcwDCroAXCRmgx_SjTiUfjDe0B5pEnySBRIbU/edit?usp=sharing) on Google Docs
   - Examples: `<header>`, `<h1>`, `<p>`
 
 Tasks:
