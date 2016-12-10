@@ -2,30 +2,34 @@
 
 We're going to create an animated story about you using HTML, CSS, JavaScript and Emojis!
 
-Contents:
+### Contents:
 - [Part 1: Setting up the HTML](#part-1-setting-up-the-html)
 - [Part 2: Styling with CSS](#part-2-styling-with-css)
 - [Part 3: Adding an animated story with JavaScript] (#part-3-adding-an-animated-story-with-javascript)
 - [Additional Resources](#additional-resources)
 - [Troubleshooting](#troubleshooting)
 
-Objectives:
+### Objectives:
 - Build a simple about me page with HTML
 - Style a pages’ colors and fonts with CSS
 - STRETCH: Control a page dynamically with JavaScript
 
-Requirements:
+### Requirements:
 - Chrome Web Browser
 - Internet access
 
+
+
 ## Part 1: Setting up the HTML
+
+> Objective: Build a simple about me page with HTML
 
 - What is HTML?
 - What are some common HTML elements?
   - Think of a [Word Document](https://docs.google.com/document/d/1pFWVHCHcwDCroAXCRmgx_SjTiUfjDe0B5pEnySBRIbU/edit?usp=sharing) on Google Docs
   - Examples: `<header>`, `<h1>`, `<p>`
 
-Tasks:
+### Tasks:
 - Open Chrome Web Browser and go to `jsbin.com`
 - Add an `<h1>` tag with your name
 - Add a `<p>` tag with your name and grade
@@ -37,17 +41,20 @@ Tasks:
 - Add matching emoji(s) before each `<p>` tag
   - `<i class="em em-some-emoji"></i>` then replace `em-some-emoji` with emoji name: Example `em-basketball`
 
-Resources:
+### Resources:
 - Emojis are available from [emoji.css](https://afeld.github.io/emoji-css/) by copy and pasting the emoji name: Example `em-basketball`
 
 
+
 ## Part 2: Styling with CSS
+
+> Objective: Style a pages’ colors and fonts with CSS
 
 - What is CSS and what is it used for?
 - What are some common CSS properties?
   - Examples: `background-color`, `font-size`, `font-family`, `color`
 
-Tasks:
+### Tasks:
 - Add a `<style>` tag before the `</head>` tag
 - Set a `background-color` for the `body` element
 ```
@@ -71,12 +78,15 @@ body {
 }
 ```
 
-Resources:
+### Resources:
 - Color names available at [147 Color Names](http://www.colors.commutercreative.com/grid/)
 - Fonts available on [Google Fonts](https://fonts.google.com/)
 
 
+
 ## Part 3: Adding an animated story with JavaScript
+
+> Objective: (STRETCH) Control a page dynamically with JavaScript
 
 - What is JavaScript used for?
 - How do we use JavaScript on our page?
@@ -85,11 +95,11 @@ Resources:
   - `screen.show(animationName)` to show the screen
   - `screen.hide(animationName, seconds)` to hide the screen after a certain amount of time
 
-Resources:
+### Resources:
 - Animations are available through [animate.css](https://daneden.github.io/animate.css/) by using the animation name: Example `bounceIn`
 - Emojis are available from [emoji.css](https://afeld.github.io/emoji-css/) by copy and pasting the emoji name: Example `em-basketball`
 
-Tasks:
+### Tasks:
 - Add an element to the page with an `id` of "story"
   - `<main id="story"></main>`
 - Include a link to the `animate.css` styles
