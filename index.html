@@ -51,7 +51,9 @@
   <script src="https://chadwithuhc.github.io/emoji-story/scripts/emoji-story.js"></script>
   <script>
     $(document).ready(function() {
-      var screen = new Screen(
+      var screen = new Screen();
+
+      screen.setContent(
         Icon('em-bear'),
         Text('Hi! My name is Chad!')
       );
@@ -59,7 +61,7 @@
       screen.show('bounceIn');
       screen.hide('bounceOut', 3);
 
-      screen.update(
+      screen.setContent(
         Icon('em-cat2') + Icon('em-dog'),
         Text('I enjoy cats'),
         Text('and dogs')
@@ -68,7 +70,7 @@
       screen.show('bounceInLeft');
       screen.hide('bounceOutRight', 3);
 
-      screen.update(
+      screen.setContent(
         Icon('em-chocolate_bar') + Icon('em-candy') + Icon('em-donut') + Icon('em-ice_cream'),
         Text('I\'m a fan of sweets')
       );
@@ -76,7 +78,7 @@
       screen.show('rotateIn');
       screen.hide('rotateOut', 5);
 
-      screen.update(
+      screen.setContent(
         Icon('em-christmas_tree') + Icon('em-christmas_tree') + Icon('em-christmas_tree'),
         Text('and the smell of Christmas Trees'),
         Icon('em-christmas_tree') + Icon('em-christmas_tree') + Icon('em-christmas_tree')
@@ -91,12 +93,14 @@
   </script>
 </head>
 <body>
-  <h1>Chad Drummond</h1>
-  <p>Web Development Instructor @ Galvanize</p>
+  <header>
+    <h1>Chad Drummond</h1>
+    <p>Web Development Instructor @ Galvanize</p>
+  </header>
   <main id="storyboard">
-    <div id="story">
+    <article id="story">
       <!-- Our animation will show up here -->
-    </div>
+    </article>
   </main>
 </body>
 </html>

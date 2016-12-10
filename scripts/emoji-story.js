@@ -4,7 +4,10 @@
 
 function Screen() {
   this.$el = $('#story');
-  this.update.apply(this, arguments);
+
+  if (this.$el.length === 0) {
+    throw new Error('Could not find #story element');
+  }
 }
 
 Screen.prototype.items = [];
@@ -44,7 +47,7 @@ Screen.prototype.hide = function(className, timeout) {
   ]);
 }
 
-Screen.prototype.update = function() {
+Screen.prototype.setContent = function() {
   var args = arguments;
   this.queue.push([
     function() {
