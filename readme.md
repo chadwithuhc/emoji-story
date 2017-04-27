@@ -5,7 +5,7 @@ We're going to create an animated story about you using HTML, CSS, JavaScript an
 ### Contents:
 - [Part 1: Setting up the HTML](#part-1-setting-up-the-html)
 - [Part 2: Styling with CSS](#part-2-styling-with-css)
-- [Part 3: Adding an animated story with JavaScript] (#part-3-adding-an-animated-story-with-javascript)
+- [Part 3: Adding an animated story with JavaScript](#part-3-adding-an-animated-story-with-javascript)
 - [Additional Resources](#additional-resources)
 - [Troubleshooting](#troubleshooting)
 
@@ -174,4 +174,4 @@ JavaScript not running?
 > Are there errors in the console? Right click the page, choose "Inspect", then switch to the "Console" tab. Do you see errors?  
 > Did you include the `<script>` tags with `src` on them? These are required.
 
-If all else fails and you are completely lost, feel free to [reach out to me](mailto:chad.drummond@galvanize.com).
+If all else fails and you are completely lost, feel free to [reach out to me](mailto:chad@cmfolio.com).

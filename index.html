@@ -51,45 +51,45 @@
   <script src="https://chadwithuhc.github.io/emoji-story/scripts/emoji-story.js"></script>
   <script>
     $(document).ready(function() {
-      var screen = new Screen();
+      var screen = new Screen()
 
       screen.setContent(
         Icon('em-bear'),
         Text('Hi! My name is Chad!')
-      );
+      )
 
-      screen.show('bounceIn');
-      screen.hide('bounceOut', 3);
+      screen.show('bounceIn')
+      screen.hide('bounceOut', 3)
 
       screen.setContent(
         Icon('em-cat2') + Icon('em-dog'),
         Text('I enjoy cats'),
         Text('and dogs')
-      );
+      )
 
-      screen.show('bounceInLeft');
-      screen.hide('bounceOutRight', 3);
+      screen.show('bounceInLeft')
+      screen.hide('bounceOutRight', 3)
 
       screen.setContent(
         Icon('em-chocolate_bar') + Icon('em-candy') + Icon('em-donut') + Icon('em-ice_cream'),
         Text('I\'m a fan of sweets')
-      );
+      )
 
-      screen.show('rotateIn');
-      screen.hide('rotateOut', 5);
+      screen.show('rotateIn')
+      screen.hide('rotateOut', 5)
 
       screen.setContent(
         Icon('em-christmas_tree') + Icon('em-christmas_tree') + Icon('em-christmas_tree'),
         Text('and the smell of Christmas Trees'),
         Icon('em-christmas_tree') + Icon('em-christmas_tree') + Icon('em-christmas_tree')
-      );
+      )
 
-      screen.show('shake');
-      screen.hide('zoomOut', 5);
+      screen.show('shake')
+      screen.hide('zoomOut', 5)
 
       // When we're done writing our timeline, START!
-      screen.start();
-    });
+      screen.start()
+    })
   </script>
 </head>
 <body>
